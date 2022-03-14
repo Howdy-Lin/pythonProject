@@ -1,0 +1,68 @@
+{% extends "super/tablebase.html" %}
+{% block content %}
+    {{ super() }}
+{% endblock %}
+
+{% block rightArea %}
+    <label for="regionSelected">品牌選取</label>
+    <select id="regionSelected" aria-label="Default select example" class="form-select">
+        <option selected>所有品牌</option>
+        {% for name in regions %}
+         <option>{{name}}</option>
+        {% endfor %}
+    </select>
+    <button id="btn">GO</button>
+
+        <h1>{{region}}</h1>
+
+        <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">商品編號</th>
+              <th scope="col">賣場</th>
+              <th scope="col">圖片</th>
+              <th scope="col">品名</th>
+              <th scope="col">品牌</th>
+              <th scope="col">價格</th>
+            </tr>
+            </thead>
+  <tbody>
+    {% for item in data %}
+
+      <tr>
+        <th scope="row">{{item['field1']}}</th>
+        <td>{{item['賣場']}}</td>
+
+        <td>
+            <a href={{item['網址']}}>
+            <img src="{{item['圖片']}}"width="100" height="100"></a>
+        </td>
+
+        <td>{{item['品名']}}</td>
+        <td>{{item['品牌']}}</td>
+        <td>{{item['價格']}}</td>
+
+      </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
+
+{% block script%}
+<script>
+    const btn = document.querySelector('#btn');
+    const rs = document.querySelector('#regionSelected')
+    btn.onclick = (event) => {
+        event.preventDefault()
+        console.log(rs.options[rs.selectedIndex].text)
+        selectedIndex = rs.selectedIndex
+        area = rs.options[selectedIndex].text
+        if(selectedIndex == 0){
+           window.location = "/衛生紙"
+        }else{
+           window.location = '/衛生紙/' + area;
+        }
+    }
+</script>
+{% endblock %}
