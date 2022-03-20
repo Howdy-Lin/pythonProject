@@ -14,7 +14,13 @@ demo影片連結:https://youtu.be/vCxsWk8iQdk<br>
 **line 聊天機器人呈現**<br>
 
 <p align="center"><img src="https://user-images.githubusercontent.com/74965449/159149840-0a48cfaa-bc72-49b2-af5d-17d4ea1083b0.png" width="40%" height="40%"></p><br>
+
+**若為衛生紙，顯示網頁連結**<br>
+
 <p align="center"><img src="https://user-images.githubusercontent.com/74965449/159149852-46ba8059-51cc-474a-8a62-c30c605b3dde.png" width="40%" height="40%"></p><br>
+
+**若不為衛生紙，僅回傳預測結果**<br>
+
 <p align="center"><img src="https://user-images.githubusercontent.com/74965449/159149854-021653a1-846d-44f1-b26f-6207ce7081a3.png" width="40%" height="40%"></p><br>
 
 **網頁呈現**<br>
