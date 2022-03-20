@@ -6,8 +6,9 @@ python 爬蟲 --> flask 網頁 --> object detection -->  linebot<br>
 object detection 與 linebot 可參考 : https://github.com/Howdy-Lin/line_detection<br>
 爬蟲參考:https://github.com/Howdy-Lin/crawler_apply<br>
 網頁參考:https://github.com/Howdy-Lin/flaskbootstrap<br>
-
+demo影片連結:https://youtu.be/vCxsWk8iQdk
 (2) 操作流程圖:<br>
+
 <p align="center"><img src="https://user-images.githubusercontent.com/74965449/159150194-4fea9ee8-c72d-4636-aa4b-3941a0c7ff07.png" width="80%" height="80%"></p><br>
 
 **line 聊天機器人呈現**<br>
